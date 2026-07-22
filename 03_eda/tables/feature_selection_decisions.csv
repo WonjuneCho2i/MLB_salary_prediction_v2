@@ -1,0 +1,15 @@
+﻿feature_or_group,decision,reason
+hit_rate,drop_linear,Overlaps with AVG and hit-type rates.
+single_rate,drop_linear,Hit composition is represented by AVG plus extra-base-hit rates.
+value_offense_per_600_pa,drop,Near-deterministic sum of batting and baserunning components.
+value_batting_per_600_pa,tree_only,Strongly reconstructed by AVG and batting-event rates in the reduced linear set.
+value_defense_per_600_pa,drop,Near-deterministic sum of fielding and positional components.
+value_rar_per_600_pa,drop,Near-duplicate of WAR/600 and Dollars/600.
+value_dollars_per_600_pa,drop,Economic scaling of WAR; would duplicate WAR information.
+value_war_per_600_pa,tree_only,Retained as an overall value summary for nonlinear models.
+current_is_*,drop,Duplicated by the categorical current_contract_stage variable.
+current_listed_team_count,drop,Exactly matched other payroll-count fields in this sample.
+current_salary_component_count,drop,Exactly matched other payroll-count fields in this sample.
+current_has_multiple_contract_groups,drop,Already represented by current_contract_stage=multiple.
+current_age_squared,linear_only,Intentional nonlinear age term; trees learn the curve directly.
+raw cumulative batting/value totals,sensitivity_only,Not snapshot-safe for partial 2026 data.

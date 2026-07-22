@@ -1,0 +1,7 @@
+﻿feature_set,numeric_count,categorical_count,total_pre_encoding,intended_use
+baseline_previous_salary,2,0,2,baseline
+performance_only_reduced,16,1,17,ablation
+linear_reduced_main,24,2,26,primary_linear
+tree_reduced_main,32,2,34,primary_tree
+full_main_rate_safe_sensitivity,46,2,48,sensitivity
+full_expanded_sensitivity,83,3,86,sensitivity

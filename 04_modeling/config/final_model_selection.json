@@ -1,0 +1,24 @@
+{
+  "selected_model": "gradient_boosting__log_change_from_current",
+  "model_family": "gradient_boosting",
+  "target_mode": "log_change_from_current",
+  "selection_metric": "four_fold_mean_mae_dollars",
+  "selection_value": 1897430.09325768,
+  "improvement_vs_current_salary_baseline_percent": 8.850884062306775,
+  "beats_current_salary_baseline_in_every_validation_year": true,
+  "candidate_id": 26,
+  "hyperparameters": {
+    "n_estimators": 150,
+    "learning_rate": 0.03,
+    "max_depth": 3.0,
+    "min_samples_leaf": 5,
+    "loss": "huber"
+  },
+  "final_fit_feature_set": "tree_reduced_main",
+  "final_fit_target_salary_years": [
+    2020,
+    2026
+  ],
+  "final_prediction_feature_year": 2026,
+  "final_prediction_target_year": 2027
+}

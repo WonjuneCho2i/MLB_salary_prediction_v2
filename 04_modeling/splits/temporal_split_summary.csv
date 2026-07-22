@@ -1,0 +1,5 @@
+﻿fold,train_target_year_start,train_target_year_end,validation_target_year,train_feature_year_start,train_feature_year_end,validation_feature_year,train_rows,validation_rows,train_unique_players,validation_unique_players,validation_players_seen_in_train,validation_players_new
+1,2020,2022,2023,2019,2021,2022,948,301,415,301,270,31
+2,2020,2023,2024,2019,2022,2023,1249,314,446,314,244,70
+3,2020,2024,2025,2019,2023,2024,1563,327,516,327,273,54
+4,2020,2025,2026,2019,2024,2025,1890,338,570,338,269,69

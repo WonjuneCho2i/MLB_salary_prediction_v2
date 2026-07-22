@@ -1,0 +1,30 @@
+{
+  "selected_model": "gradient_boosting__log_change_from_current",
+  "training_rows": 2228,
+  "training_feature_years": [
+    2019,
+    2025
+  ],
+  "training_target_salary_years": [
+    2020,
+    2026
+  ],
+  "prediction_rows": 368,
+  "prediction_feature_year": 2026,
+  "prediction_target_salary_year": 2027,
+  "partial_season_snapshot": true,
+  "feature_set": "tree_reduced_main",
+  "empirical_interval": {
+    "nominal_coverage": 0.8,
+    "method": "symmetric absolute selected-model OOF log-error quantile",
+    "oof_rows": 1280,
+    "log_radius": 0.4800162298507292,
+    "note": "Diagnostic empirical range, not a guaranteed contractual or conformal interval."
+  },
+  "versions": {
+    "python": "3.12.13",
+    "pandas": "2.3.3",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0"
+  }
+}

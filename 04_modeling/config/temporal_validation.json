@@ -1,0 +1,109 @@
+{
+  "strategy": "expanding_window_by_target_salary_year",
+  "sample": "main_hitters_pa50",
+  "feature_to_target_horizon_years": 1,
+  "initial_training_target_years": [
+    2020,
+    2022
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_target_years": [
+        2020,
+        2022
+      ],
+      "validation_target_year": 2023,
+      "train_feature_years": [
+        2019,
+        2021
+      ],
+      "validation_feature_year": 2022,
+      "train_rows": 948,
+      "validation_rows": 301
+    },
+    {
+      "fold": 2,
+      "train_target_years": [
+        2020,
+        2023
+      ],
+      "validation_target_year": 2024,
+      "train_feature_years": [
+        2019,
+        2022
+      ],
+      "validation_feature_year": 2023,
+      "train_rows": 1249,
+      "validation_rows": 314
+    },
+    {
+      "fold": 3,
+      "train_target_years": [
+        2020,
+        2024
+      ],
+      "validation_target_year": 2025,
+      "train_feature_years": [
+        2019,
+        2023
+      ],
+      "validation_feature_year": 2024,
+      "train_rows": 1563,
+      "validation_rows": 327
+    },
+    {
+      "fold": 4,
+      "train_target_years": [
+        2020,
+        2025
+      ],
+      "validation_target_year": 2026,
+      "train_feature_years": [
+        2019,
+        2024
+      ],
+      "validation_feature_year": 2025,
+      "train_rows": 1890,
+      "validation_rows": 338
+    }
+  ],
+  "final_fit": {
+    "target_years": [
+      2020,
+      2026
+    ],
+    "feature_years": [
+      2019,
+      2025
+    ],
+    "rows": 2228
+  },
+  "final_prediction": {
+    "feature_year": 2026,
+    "target_salary_year": 2027,
+    "rows": 368,
+    "partial_season_snapshot": true
+  },
+  "primary_selection_metric": "MAE_dollars",
+  "secondary_metrics": [
+    "RMSE_dollars",
+    "median_absolute_error_dollars",
+    "RMSE_log1p_salary",
+    "R2_log1p_salary"
+  ],
+  "aggregation": {
+    "primary": "mean_across_validation_folds",
+    "also_report": [
+      "per_fold",
+      "standard_deviation_across_folds"
+    ]
+  },
+  "leakage_rules": [
+    "All preprocessing is fitted on each fold's training partition only.",
+    "No target-year payroll attributes are model inputs.",
+    "Hyperparameters are selected using 2023-2026 validation folds only.",
+    "The 2026 feature snapshot is held out until final 2027 prediction.",
+    "Repeated players across years are allowed because this matches the forecasting use case."
+  ]
+}

@@ -1,0 +1,2 @@
+﻿sample,n,salary_mean,salary_median,salary_std,salary_p25,salary_p75,salary_p90,salary_p95,salary_max,salary_skewness,zero_salary_count,log_salary_mean,log_salary_median,log_salary_std,log_salary_skewness,positive_salary_skewness,positive_log_salary_skewness
+main_pa50,2228,7294039.542190305,3775000.0,8567644.836471042,1000000.0,10250000.0,20000000.0,26000000.0,61875000,1.7638457047198162,5,15.057902456578727,15.14388927625,1.4536052643657886,-2.438618912003097,1.761827622189174,0.009538032258814961
